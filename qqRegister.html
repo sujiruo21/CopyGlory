@@ -1,0 +1,811 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link rel="shortcut icon" href="img-index/favicon.ico" type="image/x-icon"/>  
+		<title>QQ注册</title>
+		<link rel="stylesheet" href="css/qqRegister.css" />
+	</head>
+
+	<body>
+		<!--左部分-->
+		<div class="l-container">
+			<a class="logo">
+				<img align="left" src="img-register/logo.png" />
+				<span class="logo-text">QQ</span>
+			</a>
+			<img id="bg-col" src="img-register/bg3.jpg" />
+		</div>
+		<!--右部分-->
+		<div class="r-container">
+			<div class="right-header">
+				<ul>
+					<li class="list-first" style="color: #fff;opacity: 1;">
+						<img class="first" src="img-register/logo3.png">
+						<a>QQ靓号</a>
+						<div class="hide-first">
+							<div class="search">
+								<input type="text" placeholder="搜索QQ靓号，如“1992”,“520”" />
+								<div class="icon-search">
+									<img id="search" src="img-register/search.png" />
+								</div>
+							</div>
+							<div class="hint">
+								<a>生日</a>
+								<a>星座</a>
+								<a>爱情</a>
+								<a>手机</a>
+							</div>
+						</div>
+					</li>
+					<li style="margin-left: 30px;"><img class="second" src="img-register/mail-entry.png" />邮箱账号</li>
+					<li class="list-third" onmousemove="showFont()" onmouseout="hideFont()">
+						简体中文<img class="third" id="third" src="img-register/down.png">
+						<div class="hide-third" id="hide-third">
+							<a>繁體中文</a>
+							<a>English</a>
+						</div>
+					</li>
+					<li>意见反馈</li>
+				</ul>
+			</div>
+			<div class="right-container">
+				<div class="form">
+					<div class="right-title">欢迎注册
+						<a style="font-family: arial;">QQ</a>
+					</div>
+					<div class="right-nav">每一天，乐在沟通。
+						<span class="right-nav-text">免费靓号</span>
+					</div>
+					<div style="position: relative;">
+						<input type="text" placeholder="昵称" class="right-input" id="name-input" onblur="checkName()" onfocus="hideName()">
+						<div class="tips-name height-start" id="name-tip">
+							昵称不可以为空
+						</div>
+						<div class="input-ok hide" id="name-ok"></div>
+					</div>
+					<div style="position: relative;">
+						<input type="password" placeholder="密码" id="pw-input" class="right-input" style="margin-bottom: 8px;" onblur="bulrPw()" onfocus="showPw()" oninput="checkPw()">
+						<div class="tips-name hide" id="tip-null">
+							密码不能为空
+						</div>
+						<div class="tips-name hide" id="tip-space">
+							不能包含空格
+						</div>
+						<div class="tips-name hide" id="tip-string">
+							长度必须为8-16个字符
+						</div>
+						<div class="tips-name hide" id="tip-number">
+							必须包含字母、数字、符号中至少2种
+						</div>
+						<div class="input-ok hide" id="pw-ok"></div>
+						<div class="tips-pw hide" id="pw-tip">
+							<a id="space">不能包括空格</a>
+							<a id="string">长度为8-16个字符</a>
+							<a id="number">必须包含字母、数字、符号中至少2种</a>
+						</div>
+					</div>
+					<div class="right-select">
+						<input type="text" onclick="showSelect()" onblur="hideSelect()" class="select" value="+86" />
+						<div class="selector">
+							<img id="icon-selector" src="img-register/down.png" />
+						</div>
+						<div class="select-ul hide" id="select-ul">
+							<ul class="options">
+								<li>
+									<a>中国 +86</a>
+								</li>
+								<li>
+									<a>中国香港特别行政区 +852</a>
+								</li>
+								<li>
+									<a>中国澳门特别行政区 +853</a>
+								</li>
+								<li>
+									<a>台湾 +886</a>
+								</li>
+								<li>
+									<a>阿尔巴尼亚 +355</a>
+								</li>
+								<li>
+									<a>阿尔及利亚 +213</a>
+								</li>
+								<li>
+									<a>阿富汗 +93</a>
+								</li>
+								<li>
+									<a>阿根廷 +54</a>
+								</li>
+								<li>
+									<a>爱尔兰 +353</a>
+								</li>
+								<li>
+									<a>埃及 +20</a>
+								</li>
+								<li>
+									<a>埃塞俄比亚 +251</a>
+								</li>
+								<li>
+									<a>爱沙尼亚 +372</a>
+								</li>
+								<li>
+									<a>阿拉伯联合酋长国 +971</a>
+								</li>
+								<li>
+									<a>阿鲁巴 +297</a>
+								</li>
+								<li>
+									<a>阿曼 +968</a>
+								</li>
+								<li>
+									<a>安道尔 +376</a>
+								</li>
+								<li>
+									<a>安哥拉 +244</a>
+								</li>
+								<li>
+									<a>安圭拉 +1264</a>
+								</li>
+								<li>
+									<a>安提瓜和巴布达 +1268</a>
+								</li>
+								<li>
+									<a>澳大利亚 +61</a>
+								</li>
+								<li>
+									<a>奥地利 +43</a>
+								</li>
+								<li>
+									<a>阿塞拜疆 +994</a>
+								</li>
+								<li>
+									<a>巴巴多斯 +1246</a>
+								</li>
+								<li>
+									<a>巴布亚新几内亚 +675</a>
+								</li>
+								<li>
+									<a>巴哈马 +1242</a>
+								</li>
+								<li>
+									<a>白俄罗斯 +375</a>
+								</li>
+								<li>
+									<a>百慕大 +1441</a>
+								</li>
+								<li>
+									<a>巴基斯坦 +92</a>
+								</li>
+								<li>
+									<a>巴拉圭 +595</a>
+								</li>
+								<li>
+									<a>巴林 +973</a>
+								</li>
+								<li>
+									<a>巴拿马 +507</a>
+								</li>
+								<li>
+									<a>保加利亚 +359</a>
+								</li>
+								<li>
+									<a>巴西 +55</a>
+								</li>
+								<li>
+									<a>北马里亚纳群岛 +1670</a>
+								</li>
+								<li>
+									<a>贝宁 +229</a>
+								</li>
+								<li>
+									<a>比利时 +32</a>
+								</li>
+								<li>
+									<a>冰岛 +354</a>
+								</li>
+								<li>
+									<a>博茨瓦纳 +267</a>
+								</li>
+								<li>
+									<a>波多黎各 +1</a>
+								</li>
+								<li>
+									<a>波兰 +48</a>
+								</li>
+								<li>
+									<a>玻利维亚 +591</a>
+								</li>
+								<li>
+									<a>伯利兹 +501</a>
+								</li>
+								<li>
+									<a>波斯尼亚和黑塞哥维那 +387</a>
+								</li>
+								<li>
+									<a>不丹 +975</a>
+								</li>
+								<li>
+									<a>布基纳法索 +226</a>
+								</li>
+								<li>
+									<a>布隆迪 +257</a>
+								</li>
+								<li>
+									<a>朝鲜 +850</a>
+								</li>
+								<li>
+									<a>赤道几内亚 +240</a>
+								</li>
+								<li>
+									<a>丹麦 +45</a>
+								</li>
+								<li>
+									<a>德国 +49</a>
+								</li>
+								<li>
+									<a>东帝汶 +670</a>
+								</li>
+								<li>
+									<a>多哥 +228</a>
+								</li>
+								<li>
+									<a>多米尼加 +1767</a>
+								</li>
+								<li>
+									<a>多米尼加共和国 +1809</a>
+								</li>
+								<li>
+									<a>厄瓜多尔 +593</a>
+								</li>
+								<li>
+									<a>厄立特里亚 +291</a>
+								</li>
+								<li>
+									<a>俄罗斯 +7</a>
+								</li>
+								<li>
+									<a>法国 +33</a>
+								</li>
+								<li>
+									<a>法罗群岛 +298</a>
+								</li>
+								<li>
+									<a>梵蒂冈 +39</a>
+								</li>
+								<li>
+									<a>法属波利尼西亚 +689</a>
+								</li>
+								<li>
+									<a>斐济 +679</a>
+								</li>
+								<li>
+									<a>菲律宾 +63</a>
+								</li>
+								<li>
+									<a>芬兰 +358</a>
+								</li>
+								<li>
+									<a>佛得角 +238</a>
+								</li>
+								<li>
+									<a>福克兰群岛 +500</a>
+								</li>
+								<li>
+									<a>冈比亚 +220</a>
+								</li>
+								<li>
+									<a>刚果（布） +242</a>
+								</li>
+								<li>
+									<a>刚果（金） +243</a>
+								</li>
+								<li>
+									<a>格陵兰 +299</a>
+								</li>
+								<li>
+									<a>格林纳达 +1473</a>
+								</li>
+								<li>
+									<a>格鲁吉亚 +995</a>
+								</li>
+								<li>
+									<a>哥伦比亚 +57</a>
+								</li>
+								<li>
+									<a>哥斯达黎加 +506</a>
+								</li>
+								<li>
+									<a>关岛 +1671</a>
+								</li>
+								<li>
+									<a>古巴 +53</a>
+								</li>
+								<li>
+									<a>圭亚那 +592</a>
+								</li>
+								<li>
+									<a>海地 +509</a>
+								</li>
+								<li>
+									<a>韩国 +82</a>
+								</li>
+								<li>
+									<a>哈萨克斯坦 +7</a>
+								</li>
+								<li>
+									<a>黑山共和国 +382</a>
+								</li>
+								<li>
+									<a>荷兰 +31</a>
+								</li>
+								<li>
+									<a>荷属安的列斯群岛 +599</a>
+								</li>
+								<li>
+									<a>洪都拉斯 +504</a>
+								</li>
+								<li>
+									<a>加纳 +233</a>
+								</li>
+								<li>
+									<a>加拿大 +1</a>
+								</li>
+								<li>
+									<a>柬埔寨 +855</a>
+								</li>
+								<li>
+									<a>加蓬 +241</a>
+								</li>
+								<li>
+									<a>吉布提 +253</a>
+								</li>
+								<li>
+									<a>捷克共和国 +420</a>
+								</li>
+								<li>
+									<a>吉尔吉斯斯坦 +996</a>
+								</li>
+								<li>
+									<a>基里巴斯 +686</a>
+								</li>
+								<li>
+									<a>几内亚 +224</a>
+								</li>
+								<li>
+									<a>几内亚比绍 +245</a>
+								</li>
+								<li>
+									<a>开曼群岛 +1345</a>
+								</li>
+								<li>
+									<a>喀麦隆 +237</a>
+								</li>
+								<li>
+									<a>卡塔尔 +974</a>
+								</li>
+								<li>
+									<a>科科斯群岛 +61</a>
+								</li>
+								<li>
+									<a>克罗地亚 +385</a>
+								</li>
+								<li>
+									<a>科摩罗 +269</a>
+								</li>
+								<li>
+									<a>肯尼亚 +254</a>
+								</li>
+								<li>
+									<a>科特迪瓦 +225</a>
+								</li>
+								<li>
+									<a>科威特 +965</a>
+								</li>
+								<li>
+									<a>库克群岛 +682</a>
+								</li>
+								<li>
+									<a>莱索托 +266</a>
+								</li>
+								<li>
+									<a>老挝人民民主共和国 +856</a>
+								</li>
+								<li>
+									<a>拉脱维亚 +371</a>
+								</li>
+								<li>
+									<a>黎巴嫩 +961</a>
+								</li>
+								<li>
+									<a>利比里亚 +231</a>
+								</li>
+								<li>
+									<a>利比亚 +218</a>
+								</li>
+								<li>
+									<a>列支敦士登 +423</a>
+								</li>
+								<li>
+									<a>立陶宛 +370</a>
+								</li>
+								<li>
+									<a>罗马尼亚 +40</a>
+								</li>
+								<li>
+									<a>卢森堡 +352</a>
+								</li>
+								<li>
+									<a>卢旺达 +250</a>
+								</li>
+								<li>
+									<a>马达加斯加 +261</a>
+								</li>
+								<li>
+									<a>马尔代夫 +960</a>
+								</li>
+								<li>
+									<a>马耳他 +356</a>
+								</li>
+								<li>
+									<a>马来西亚 +60</a>
+								</li>
+								<li>
+									<a>马拉维 +265</a>
+								</li>
+								<li>
+									<a>马里 +223</a>
+								</li>
+								<li>
+									<a>曼岛 +44</a>
+								</li>
+								<li>
+									<a>毛里求斯 +230</a>
+								</li>
+								<li>
+									<a>毛里塔尼亚 +222</a>
+								</li>
+								<li>
+									<a>马其顿 +389</a>
+								</li>
+								<li>
+									<a>马绍尔群岛 +692</a>
+								</li>
+								<li>
+									<a>马约特 +262</a>
+								</li>
+								<li>
+									<a>美国 +1</a>
+								</li>
+								<li>
+									<a>美属萨摩亚 +1684</a>
+								</li>
+								<li>
+									<a>美属维京群岛 +1340</a>
+								</li>
+								<li>
+									<a>蒙古 +976</a>
+								</li>
+								<li>
+									<a>孟加拉国 +880</a>
+								</li>
+								<li>
+									<a>蒙塞拉特群岛 +1664</a>
+								</li>
+								<li>
+									<a>缅甸 +95</a>
+								</li>
+								<li>
+									<a>密克罗尼西亚联邦 +691</a>
+								</li>
+								<li>
+									<a>秘鲁 +51</a>
+								</li>
+								<li>
+									<a>摩尔多瓦 +373</a>
+								</li>
+								<li>
+									<a>摩洛哥 +212</a>
+								</li>
+								<li>
+									<a>摩纳哥 +377</a>
+								</li>
+								<li>
+									<a>莫桑比克 +258</a>
+								</li>
+								<li>
+									<a>墨西哥 +52</a>
+								</li>
+								<li>
+									<a>纳米比亚 +264</a>
+								</li>
+								<li>
+									<a>南非 +27</a>
+								</li>
+								<li>
+									<a>南极洲 +672</a>
+								</li>
+								<li>
+									<a>瑙鲁 +674</a>
+								</li>
+								<li>
+									<a>尼泊尔 +977</a>
+								</li>
+								<li>
+									<a>尼加拉瓜 +505</a>
+								</li>
+								<li>
+									<a>尼日尔 +227</a>
+								</li>
+								<li>
+									<a>尼日利亚 +234</a>
+								</li>
+								<li>
+									<a>纽埃 +683</a>
+								</li>
+								<li>
+									<a>挪威 +47</a>
+								</li>
+								<li>
+									<a>帕劳 +680</a>
+								</li>
+								<li>
+									<a>皮特凯恩群岛 +870</a>
+								</li>
+								<li>
+									<a>葡萄牙 +351</a>
+								</li>
+								<li>
+									<a>日本 +81</a>
+								</li>
+								<li>
+									<a>瑞典 +46</a>
+								</li>
+								<li>
+									<a>瑞士 +41</a>
+								</li>
+								<li>
+									<a>萨尔瓦多 +503</a>
+								</li>
+								<li>
+									<a>塞尔维亚 +381</a>
+								</li>
+								<li>
+									<a>塞拉利昂 +232</a>
+								</li>
+								<li>
+									<a>塞内加尔 +221</a>
+								</li>
+								<li>
+									<a>塞浦路斯 +357</a>
+								</li>
+								<li>
+									<a>塞舌尔群岛 +248</a>
+								</li>
+								<li>
+									<a>萨摩亚 +685</a>
+								</li>
+								<li>
+									<a>沙特阿拉伯 +966</a>
+								</li>
+								<li>
+									<a>圣巴泰勒米 +590</a>
+								</li>
+								<li>
+									<a>圣诞岛 +61</a>
+								</li>
+								<li>
+									<a>圣多美和普林西比 +239</a>
+								</li>
+								<li>
+									<a>圣赫勒拿 +290</a>
+								</li>
+								<li>
+									<a>圣基茨和尼维斯 +1869</a>
+								</li>
+								<li>
+									<a>圣卢西亚 +1758</a>
+								</li>
+								<li>
+									<a>圣马丁 +1599</a>
+								</li>
+								<li>
+									<a>圣马力诺 +378</a>
+								</li>
+								<li>
+									<a>圣皮埃尔和密克隆 +508</a>
+								</li>
+								<li>
+									<a>圣文森特和格林纳丁斯 +1784</a>
+								</li>
+								<li>
+									<a>斯里兰卡 +94</a>
+								</li>
+								<li>
+									<a>斯洛伐克 +421</a>
+								</li>
+								<li>
+									<a>斯洛文尼亚 +386</a>
+								</li>
+								<li>
+									<a>斯威士兰 +268</a>
+								</li>
+								<li>
+									<a>苏丹 +249</a>
+								</li>
+								<li>
+									<a>所罗门群岛 +677</a>
+								</li>
+								<li>
+									<a>索马里 +252</a>
+								</li>
+								<li>
+									<a>泰国 +66</a>
+								</li>
+								<li>
+									<a>塔吉克斯坦 +992</a>
+								</li>
+								<li>
+									<a>汤加 +676</a>
+								</li>
+								<li>
+									<a>坦桑尼亚 +255</a>
+								</li>
+								<li>
+									<a>特克斯和凯科斯群岛 +1649</a>
+								</li>
+								<li>
+									<a>特立尼达和多巴哥 +1868</a>
+								</li>
+								<li>
+									<a>土耳其 +90</a>
+								</li>
+								<li>
+									<a>土库曼斯坦 +993</a>
+								</li>
+								<li>
+									<a>突尼斯 +216</a>
+								</li>
+								<li>
+									<a>托克劳 +690</a>
+								</li>
+								<li>
+									<a>图瓦卢 +688</a>
+								</li>
+								<li>
+									<a>瓦利斯和富图纳 +681</a>
+								</li>
+								<li>
+									<a>瓦努阿图 +678</a>
+								</li>
+								<li>
+									<a>危地马拉 +502</a>
+								</li>
+								<li>
+									<a>委内瑞拉 +58</a>
+								</li>
+								<li>
+									<a>文莱 +673</a>
+								</li>
+								<li>
+									<a>乌干达 +256</a>
+								</li>
+								<li>
+									<a>乌克兰 +380</a>
+								</li>
+								<li>
+									<a>乌拉圭 +598</a>
+								</li>
+								<li>
+									<a>乌兹别克斯坦 +998</a>
+								</li>
+								<li>
+									<a>西班牙 +34</a>
+								</li>
+								<li>
+									<a>希腊 +30</a>
+								</li>
+								<li>
+									<a>新加坡 +65</a>
+								</li>
+								<li>
+									<a>新喀里多尼亚 +687</a>
+								</li>
+								<li>
+									<a>新西兰 +64</a>
+								</li>
+								<li>
+									<a>匈牙利 +36</a>
+								</li>
+								<li>
+									<a>叙利亚 +963</a>
+								</li>
+								<li>
+									<a>牙买加 +1876</a>
+								</li>
+								<li>
+									<a>亚美尼亚 +374</a>
+								</li>
+								<li>
+									<a>也门 +967</a>
+								</li>
+								<li>
+									<a>意大利 +39</a>
+								</li>
+								<li>
+									<a>伊拉克 +964</a>
+								</li>
+								<li>
+									<a>伊朗 +98</a>
+								</li>
+								<li>
+									<a>印度 +91</a>
+								</li>
+								<li>
+									<a>印度尼西亚 +62</a>
+								</li>
+								<li>
+									<a>英国 +44</a>
+								</li>
+								<li>
+									<a>英属维京群岛 +1284</a>
+								</li>
+								<li>
+									<a>以色列 +972</a>
+								</li>
+								<li>
+									<a>约旦 +962</a>
+								</li>
+								<li>
+									<a>越南 +84</a>
+								</li>
+								<li>
+									<a>赞比亚 +260</a>
+								</li>
+								<li>
+									<a>乍得 +235</a>
+								</li>
+								<li>
+									<a>直布罗陀 +350</a>
+								</li>
+								<li>
+									<a>智利 +56</a>
+								</li>
+								<li>
+									<a>中非共和国 +236</a>
+								</li>
+							</ul>
+						</div>
+						<input type="text" placeholder="手机号码" class="text1" onfocus="showSms()" onblur="hideSms()">
+						<span style="float:left; font-size: 14px;color: #999;margin-top: 5px;font-family: '微软雅黑';">可通过该手机号找回密码</span>
+					</div>
+					<div class="right-select hide" id="sms">
+						<input type="text" placeholder="短信验证码" class="select" />
+						<input type="button" value="发送短信验证码" class="text2">
+					</div>
+					<div class="right-select" id="right-select">
+						<button class="button"><a style="text-decoration: none;color: #fff;" href="index.html">立即注册</a></button>
+					</div>
+					<div class="right-bottom" id="right-bottom">
+						<a>
+							<img align="left" style="margin-right: 10px;" src="img-register/checkbox_check.png" onclick="changePic(this)" /> 同时开通QQ空间
+						</a>
+						<img align="left" style="margin-right: 10px;" src="img-register/checkbox_check.png" onclick="changePic(this)" />
+						<a class="box" onclick="showBox()">
+							我已阅读并同意相关服务条款和隐私政策
+							<img class="icon-select" id="icon-select" src="img-register/down.png" />
+						</a>
+						<div class="hide-box hidden" id="hide-box">
+							<a>《QQ号码规则》</a>
+							<a>《隐私政策》</a>
+							<a>《QQ空间服务协议》</a>
+						</div>
+					</div>
+
+					<div class="bottom">Copyright&copy;1998-2017Tencent All Rights Reserved</div>
+				</div>
+			</div>
+	</body>
+	<script type="text/javascript" src="js/qqRegister.js"></script>
+
+</html>
