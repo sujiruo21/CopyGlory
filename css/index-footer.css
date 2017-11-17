@@ -1,0 +1,136 @@
+.footer {
+	width: 100%;
+	height: 362px;
+	margin-top: 30px;
+	position: relative;
+	z-index: 2;
+	height: 362px;
+	font-size: 14px;
+	background: url(../img-index/bg_footer.jpg) no-repeat center 0;
+}
+
+.footer-main {
+	width: 1200px;
+	padding-top: 80px;
+	margin: 0 auto;
+}
+
+.footer-header {
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+	border-bottom: 2px solid #d4d4d4;
+}
+
+.footer-logo {
+	display: inline-block;
+	margin-top: 10px;
+	cursor: pointer;
+}
+
+.footer-media {
+	width: 285px;
+	margin-top: 30px;
+	background: #f7f7f7;
+	color: #666666;
+	cursor: pointer;
+	float: right;
+	position: relative;
+}
+
+.footer-media h3 {
+	width: 270px;
+	height: 30px;
+	line-height: 30px;
+	padding-left: 10px;
+	border: 3px solid #b8b8b8;
+	font-size: 14px;
+}
+
+.btn-arrow {
+	position: absolute;
+	top: 6px;
+	right: 3px;
+	width: 38px;
+	height: 24px;
+	border-left: 1px solid #b8b8b8;
+}
+
+.arrow {
+	display: inline-block;
+	width: 7px;
+	height: 6px;
+	margin: 10px 0 0 15px;
+	background: url(../img-index/arrow.png);
+	background-position: -348px -86px;
+}
+
+.media-list {
+	width: 280px;
+	height: 200px;
+	border: 3px solid #b8b8b8;
+	overflow-y: auto;
+	background-color: #F7F7F7;
+	list-style: none;
+	position: absolute;
+	top: 33px;
+	display: none;
+}
+
+.media-list a {
+	display: block;
+	padding-left: 15px;
+	height: 28px;
+	line-height: 28px;
+	background: #f7f7f7;
+	text-decoration: none;
+	color: #363636;
+	font-size: 14px;
+}
+
+.media-list a:hover {
+	background: #3589dd;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.footer-media:hover .media-list {
+	display: block;
+}
+
+.footer-content-l {
+	width: 508px;
+	height: 99px;
+	display: inline-block;
+	float: left;
+}
+
+.footer-content-l .foot2 {
+	font-size: 12px;
+}
+
+.footer-content-l .foot2 a {
+	margin-right: 12px;
+	color: #6d6d6d;
+}
+
+.footer-content-l .info {
+	font-size: 12px;
+	color: #666;
+	margin-top: 6px;
+}
+
+.footer-content-r {
+	width: 632px;
+	height: 100px;
+	float: right;
+	font-size: 12px;
+	display: inline-block;
+	text-align: left;
+	padding-top: 18px;
+	color: #646467;
+}
+
+.foot-txt{
+	margin: 5px 0;
+}
+

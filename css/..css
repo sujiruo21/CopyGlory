@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.header {
+  width: 100%;
+  height: 42px;
+  background: url(../img-index/bg_header.png);
+  color: #464646;
+  font-size: 12px;
+  z-index: 100;
+  font-family: Tahoma, simsun;
+  border: 1px solid #c9c9c9;
+  position: relative;
+}
+.header .header-logo {
+  width: 224px;
+  height: 42px;
+  margin-left: 153px;
+  display: inline-block;
+  z-index: 300;
+  position: relative;
+}
+.header .header-game {
+  width: 230px;
+  height: 40px;
+  display: inline-block;
+  margin-top: 3px;
+}
+.header .header-game .hide-header-game {
+  width: 970px;
+  height: 185px;
+  position: absolute;
+  top: 0;
+  left: 156px;
+  padding-top: 4px;
+  background: #fff;
+  z-index: 200;
+  display: none;
+}
+.header .header-right {
+  width: 375px;
+  height: 42px;
+  position: absolute;
+  right: 30px;
+  top: 0;
+}
+.header .header-right a {
+  line-height: 42px;
+}
+.header .header-right .header-select {
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  background: url(../img-index/header_metarial.png);
+  background-position: -150px -134px;
+  margin-left: 5px;
+  vertical-align: middle;
+}
+.header .header-right .header-right-r {
+  display: inline-block;
+}
+.header .header-right .header-right-r .hide-header-right {
+  width: 700px;
+  height: 460px;
+  position: absolute;
+  top: 42px;
+  right: 150px;
+  background: #fff;
+  padding: 20px 10px;
+}
+.header .header-right .header-right-r .hide-header-right .hide-right-content {
+  width: 232px;
+  height: 460px;
+  list-style: none;
+  color: #999;
+  padding: 0px 10px;
+}
+.header .header-right .header-right-r .hide-header-right .hide-right-content li {
+  width: 222px;
+  height: 30px;
+  position: relative;
+}
+.header .header-right .header-right-r .hide-header-right .hide-right-content li .sequence {
+  float: left;
+  width: 12px;
+  height: 12px;
+  margin: 2px 15px 0 4px;
+  line-height: 12px;
+  text-align: center;
+  color: #fff;
+  border: 1px solid #ff4e00;
+  background: #ff4e00;
+  position: relative;
+  margin-left: -3px;
+  z-index: 100;
+}
+.header .header-right .header-right-r .hide-header-right .hide-right-content li .bg-sequence {
+  width: 194px;
+  height: 82px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 80;
+}
+.header .header-right .header-right-r .hide-header-right .hide-right-content li .bg-sequence .nav-sequence {
+  width: 194px;
+}
+.header-game:hover .hide-header-game {
+  display: block;
+}
+.header .header-right .header-right-l:hover {
+  color: #FF4E00;
+}
+.header .header-right .header-right-r:hover a {
+  color: #FF4E00;
+}
+.header .header-right .header-right-r:hover .header-select {
+  background-position: -170px -134px;
+}
